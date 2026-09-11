@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://co037htcqwdhq"]
+
+[ext_resource type="Script" uid="uid://cgrsusmk2x4dx" path="res://player/BasickAttack.cs" id="1_oogl4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fxl0e"]
+size = Vector2(46.5, 30.5)
+
+[node name="Area2D" type="Area2D" unique_id=66238684]
+script = ExtResource("1_oogl4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2061825419]
+shape = SubResource("RectangleShape2D_fxl0e")
+debug_color = Color(0.33011144, 0.4968664, 0.69350946, 0.42)
+
+[node name="Polygon2D" type="Polygon2D" parent="CollisionShape2D" unique_id=127464556]
+position = Vector2(-64.75, -145.75)
+polygon = PackedVector2Array(40.75, 130.75, 41.75, 160.75, 87.75, 160.75, 87.75, 129.75)
