@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bjnn2fv2shgjd"]
 
-[ext_resource type="Script" uid="uid://dgjunjr2mqurn" path="res://movment/Bullett.cs" id="1_3jwut"]
+[ext_resource type="Script" uid="uid://dgjunjr2mqurn" path="res://movement/Bullett.cs" id="1_3jwut"]
+
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7aou6"]
 

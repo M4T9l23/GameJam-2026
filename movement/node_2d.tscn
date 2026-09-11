@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dp5mrlj2a8lje"]
 
-[ext_resource type="Script" uid="uid://cw2o3rpl0cwbk" path="res://movment/Movment.cs" id="1_63wlx"]
+[ext_resource type="Script" uid="uid://cw2o3rpl0cwbk" path="res://movement/Movment.cs" id="1_a5yl4"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_whuo6"]
 normal = Vector2(0.022982433, -0.99973583)
@@ -9,7 +9,7 @@ distance = 30.922865
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ya0f5"]
 size = Vector2(67, 56)
 
-[node name="Node2D" type="Node2D" unique_id=1509736517]
+[node name="Main" type="Node2D" unique_id=1509736517]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=678671380]
 
@@ -23,7 +23,9 @@ rotation = 1.5707964
 shape = SubResource("WorldBoundaryShape2D_whuo6")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=93463848]
-script = ExtResource("1_63wlx")
+position = Vector2(-7.6293945e-06, -1.5258789e-05)
+scale = Vector2(0.99999994, 0.99999994)
+script = ExtResource("1_a5yl4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=999192083]
 position = Vector2(42.5, 35)
@@ -33,6 +35,9 @@ shape = SubResource("RectangleShape2D_ya0f5")
 position = Vector2(3.5, 12)
 polygon = PackedVector2Array(-35.982067, -39.28346, -35.982067, 14.283459, 28.982067, 14.283459, 28.982067, -39.28346)
 uv = PackedVector2Array(-32, -36, -32, 11, 25, 11, 25, -36)
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=532049427]
+visible = false
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1356053891]
 scale = Vector2(2, 2)

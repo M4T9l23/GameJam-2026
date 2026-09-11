@@ -13,24 +13,24 @@ public partial class Movment : CharacterBody2D{
     public float Gravity = 980f;
 
     public override void _PhysicsProcess(double delta)
-    {
-        Vector2 velocity = Velocity;
-
-        /*if (!IsOnFloor())
-            velocity.Y += Gravity * (float)delta;*/ 
-
-        /*if (Input.IsActionJustPressed("ui_up") && IsOnFloor())
-            velocity.Y = JumpVelocity;*/ 
-
-        float dir = Input.GetAxis("ui_left", "ui_right");
-        velocity.X = dir * Speed;
-        
-        float dir_y = Input.GetAxis("ui_up", "ui_down");
-        velocity.Y = dir_y * Speed;
-
-        Velocity = velocity;
-        MoveAndSlide();
-    }
+     {
+         Vector2 velocity = Velocity;
+     
+         float dir = Input.GetAxis("ui_left", "ui_right");
+         velocity.X = dir * Speed;
+         
+         float dir_y = Input.GetAxis("ui_up", "ui_down");
+         velocity.Y = dir_y * Speed;
+     
+         Velocity = velocity;
+         MoveAndSlide();
+     
+         // Debug log to confirm movement
+         if (velocity != Vector2.Zero)
+         {
+             GD.Print("Player Position: ", GlobalPosition);
+         }
+     }
     
     [Export] public PackedScene BulletScene;
 
