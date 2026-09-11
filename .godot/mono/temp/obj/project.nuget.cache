@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "uf63GU4tRq0=",
+  "success": true,
+  "projectFilePath": "/home/m4t9/GameJam2026/GameJam2026/GameJam.csproj",
+  "expectedPackageFiles": [
+    "/home/m4t9/.nuget/packages/godot.sourcegenerators/4.7.2/godot.sourcegenerators.4.7.2.nupkg.sha512",
+    "/home/m4t9/.nuget/packages/godotsharp/4.7.2/godotsharp.4.7.2.nupkg.sha512",
+    "/home/m4t9/.nuget/packages/godotsharpeditor/4.7.2/godotsharpeditor.4.7.2.nupkg.sha512",
+    "/home/m4t9/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.27/microsoft.aspnetcore.app.ref.8.0.27.nupkg.sha512"
+  ],
+  "logs": []
+}

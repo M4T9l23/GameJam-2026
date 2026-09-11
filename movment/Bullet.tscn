@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bjnn2fv2shgjd"]
+
+[ext_resource type="Script" uid="uid://dgjunjr2mqurn" path="res://movment/Bullett.cs" id="1_3jwut"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7aou6"]
+
+[node name="Node2D" type="Area2D" unique_id=328004520]
+script = ExtResource("1_3jwut")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1117076487]
+shape = SubResource("RectangleShape2D_7aou6")
+
+[node name="ColorRect" type="ColorRect" parent="CollisionShape2D" unique_id=140919367]
+offset_left = -11.0
+offset_top = -11.0
+offset_right = 12.0
+offset_bottom = 10.0
+color = Color(1, 1, 0.30588236, 1)
+metadata/_edit_use_anchors_ = true

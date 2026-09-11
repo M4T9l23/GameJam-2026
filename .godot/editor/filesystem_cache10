@@ -1,0 +1,10 @@
+78098b89c88a74ebe8c20117b8754620
+::res://::1789109207
+README.md::TextFile::-1::1788803429::0::1::::<><><>0<>0<><>::
+::res://movment/::1788862560
+Bullet.tscn::PackedScene::3045795020888302149::1788862560::0::1::::<><><>0<>0<><>::uid://dgjunjr2mqurn::::res://movment/Bullett.cs
+Bullett.cs::CSharpScript::7600212568085399807::1788860971::0::1::::<><><>0<>0<><>::
+Movment.cs::CSharpScript::6373635083512916932::1788862545::0::1::::<>CharacterBody2D<><>0<>0<><>::
+node_2d.tscn::PackedScene::8274785593569320842::1788860976::0::1::::<><><>0<>0<><>::uid://cw2o3rpl0cwbk::::res://movment/Movment.cs
+::res://player/::1788807221
+player.cs::CSharpScript::7678679436792216425::1788806209::0::1::::<>Node<><>0<>0<><>::
